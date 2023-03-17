@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on any name below to learn more about my family." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQP-Sg-LNt">
-                                <rect key="frame" x="96" y="103" width="201" height="64.666666666666686"/>
+                                <rect key="frame" x="96" y="59.000000000000007" width="201" height="64.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -26,7 +26,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4D-OY-jCV">
                                         <rect key="frame" x="0.0" y="0.0" width="117" height="34.666666666666664"/>
-                                        <color key="tintColor" red="0.43308462716054785" green="0.69129307828899988" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.43137254901960786" green="0.69129307828899988" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button">
                                             <attributedString key="attributedTitle">
@@ -37,9 +37,6 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
-                                        <connections>
-                                            <segue destination="s2e-7t-KWO" kind="show" identifier="Michael" id="PcR-h3-fj1"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hCd-CM-1z1">
                                         <rect key="frame" x="0.0" y="54.666666666666629" width="117" height="34.666666666666657"/>
@@ -54,9 +51,6 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
-                                        <connections>
-                                            <segue destination="s2e-7t-KWO" kind="show" identifier="Melissa" id="qUj-f6-oBP"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBF-Qt-qYD">
                                         <rect key="frame" x="0.0" y="109.33333333333331" width="117" height="34.666666666666657"/>
@@ -71,9 +65,6 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
-                                        <connections>
-                                            <segue destination="s2e-7t-KWO" kind="show" identifier="Christopher" id="5el-uu-SQZ"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-D8-MUH">
                                         <rect key="frame" x="0.0" y="164" width="117" height="34.666666666666657"/>
@@ -88,9 +79,6 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
-                                        <connections>
-                                            <segue destination="s2e-7t-KWO" kind="show" identifier="Juliana" id="cZv-EC-T0Q"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -115,7 +103,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.74045801526711" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="2764" y="-27"/>
+        </scene>
+        <!--Family Table View Controller-->
+        <scene sceneID="F4S-Yc-Kfy">
+            <objects>
+                <tableViewController id="1tx-xw-Dgf" customClass="FamilyTableViewController" customModule="Introduce_Family" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u0I-xV-w6t">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.064861841500000003" green="0.13663351539999999" blue="0.086590223009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.064861841500000003" green="0.13663351539999999" blue="0.086590223009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on any name below to learn more about my family." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IEm-Os-oIC">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="64.666666666666671"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="familyCell" id="pZc-ve-g3z" customClass="FamilyTableViewCell" customModule="Introduce_Family" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="114.66666666666669" width="393" height="45.333332061767578"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pZc-ve-g3z" id="ysw-BR-CmT">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="45.333332061767578"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqY-1l-Zs1">
+                                            <rect key="frame" x="20" y="10.999999999999998" width="353" height="23.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="wqY-1l-Zs1" secondAttribute="bottom" id="8eg-SZ-QEc"/>
+                                        <constraint firstItem="wqY-1l-Zs1" firstAttribute="top" secondItem="ysw-BR-CmT" secondAttribute="topMargin" id="9aB-U6-Lhf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="wqY-1l-Zs1" secondAttribute="trailing" id="U4C-GI-qqX"/>
+                                        <constraint firstItem="wqY-1l-Zs1" firstAttribute="leading" secondItem="ysw-BR-CmT" secondAttribute="leadingMargin" id="xtD-t8-ugu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.064861841500000003" green="0.13663351539999999" blue="0.086590223009999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="nameLabel" destination="wqY-1l-Zs1" id="mmj-fV-hrm"/>
+                                    <segue destination="s2e-7t-KWO" kind="show" destinationCreationSelector="viewSibling:sender:" id="BHG-FG-5NB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="1tx-xw-Dgf" id="SOu-yd-pSF"/>
+                            <outlet property="delegate" destination="1tx-xw-Dgf" id="4Uf-O2-bWH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="B6V-mi-9kC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgo-by-abD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="-27"/>
         </scene>
         <!--Name-->
         <scene sceneID="3EJ-eV-LMY">
@@ -167,11 +211,13 @@
                         <outlet property="ageLabel" destination="DfE-jq-UNb" id="a73-We-gl5"/>
                         <outlet property="hobbyLabel" destination="Q0h-59-bcB" id="r7c-J5-yUO"/>
                         <outlet property="imageView" destination="Lil-o7-PwZ" id="LzX-9K-R5N"/>
+                        <outletCollection property="allLabels" destination="DfE-jq-UNb" collectionClass="NSMutableArray" id="BKl-tm-nMB"/>
+                        <outletCollection property="allLabels" destination="Q0h-59-bcB" collectionClass="NSMutableArray" id="Ojb-eK-n6l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AD-NN-0l8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="-35"/>
+            <point key="canvasLocation" x="1573" y="-27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UsA-ZK-HUP">
@@ -189,7 +235,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="48O-xn-RQB"/>
+                        <segue destination="1tx-xw-Dgf" kind="relationship" relationship="rootViewController" id="ReZ-8y-pzi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAU-Ks-yge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -197,7 +243,4 @@
             <point key="canvasLocation" x="-37.404580152671755" y="-27.464788732394368"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="qUj-f6-oBP"/>
-    </inferredMetricsTieBreakers>
 </document>
